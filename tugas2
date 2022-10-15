@@ -1,0 +1,27 @@
+//No 1
+Class adalah prototype, atau blueprint, atau rancangan yang mendefinisikan variable dan method-methode pada seluruh objek tertentu. Class berfungsi untuk menampung isi dari program yang akan di jalankan, di dalamnya berisi atribut / type data dan method untuk menjalankan suatu program. Object adalah instance dari class. Jika class secara umum mepresentasikan (template) sebuah object, sebuah instance adalah representasi nyata dari class itu sendiri. Contoh : Dari class Fruit kita dapat membuat object Mangga, Pisang, Apel, dan lain-lain.
+//No2
+Jenis-jenis method: Method setter (prosedur) digunakan untuk memberikan nilai ataupun untuk menampilkan nilai dari variabel, sehingga tidak memerlukan return value, sedangkan method getter (fungsi) digunakan untuk mengambil nilai dari variabel, sehingga membutuhkan return value. (1) void dan (2) return. void method adalah method yang tidak mengembalikan suatu nilai. return method adalah method yang mengembalikan nilai.
+//No 3
+1. class 2. class member 3. object 4. atribut 5. atribut 6. object 7. object 8. method
+//No 4
+public class HandPhone{
+		String jenis_HP;
+		int tahun_pembuatan;
+		public void setDataHP(String jenis_hp, int tahun_pembuatan){
+				jenis_hp = jenis_hp;
+				tahun_pembuatan = tahun_pembuatan;
+		}
+		public String getJenisHP(){
+				return jenis_hp;
+		}
+		public String getTahunPembuatan(){
+				return tahun_pembuatan;
+		}
+		public static void main(String[] args) {
+				HandPhone hp = new HandPhone();
+				hp.setDataHP(jenis_hp, tahun_pembuatan);
+				hp.getJenisHP();
+				hp.getTahunPembuatan();
+		}
+}
